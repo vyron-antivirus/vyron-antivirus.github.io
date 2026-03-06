@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVIRA Antivirus</title>
+
+    <!-- OVIRA Browser Icon -->
+    <link rel="icon" type="image/png" href="ovira-logo.png">
+    <link rel="shortcut icon" href="ovira-logo.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+            display: flex;
+
+            /* Green grid background */
+            background-image:
+                linear-gradient(rgba(0, 255, 0, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 0, 0.08) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background-color: #0b0b0b;
+            border-right: 1px solid #222;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar img {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px 10px;
+            margin-bottom: 10px;
+            color: #66ff66;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+
+        .sidebar a:hover {
+            background-color: #1a1a1a;
+        }
+
+        /* Main content */
+        .main {
+            margin-left: 260px;
+            padding: 40px;
+            width: calc(100% - 260px);
+            box-sizing: border-box;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to bottom, #111, #0a0a0a);
+            border-radius: 10px;
+            margin-bottom: 50px;
+            border: 1px solid #0f0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cccccc;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        /* Neon feature boxes */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .feature-box {
+            background-color: #0f0f0f;
+            border: 1px solid #00ff00;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0, 255, 0, 0.3);
+            font-size: 16px;
+        }
+
+        .feature-box span {
+            font-size: 20px;
+            color: #66ff66;
+            font-weight: bold;
+        }
+
+        .download-box {
+            background-color: #111;
+            padding: 30px;
+            border: 1px solid #222;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #66ff66;
+            color: #000;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .download-btn:hover {
+            background-color: #55dd55;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            border-top: 1px solid #222;
+            color: #777;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <img src="ovira-logo.png" alt="OVIRA Logo">
+    <h2>OVIRA Antivirus</h2>
+
+    <a href="#home">Home</a>
+    <a href="#info">Information</a>
+    <a href="#download">Download</a>
+</div>
+
+<div class="main">
+
+    <section class="hero" id="home">
+        <h1>OVIRA Antivirus</h1>
+        <p>Advanced protection. Clean interface. Maximum security.</p>
+    </section>
+
+    <section class="section" id="info">
+        <h2>About OVIRA</h2>
+        <p>
+            OVIRA Antivirus is built to deliver a clean, powerful, and modern security experience.
+            With fast scanning, quarantine management, and a unified interface, OVIRA keeps your
+            system safe without slowing it down.
+        </p>
+
+        <div class="features">
+            <div class="feature-box">
+                <span>⚡ Super Fast Scanning</span><br>
+                Quickly scans your system using optimized signature and heuristic checks.
+            </div>
+
+            <div class="feature-box">
+                <span>🛡️ Real-Time Protection</span><br>
+                Monitors threats and suspicious activity with lightweight performance.
+            </div>
+
+            <div class="feature-box">
+                <span>📦 Smart Quarantine</span><br>
+                Automatically isolates harmful files to keep your system safe.
+            </div>
+
+            <div class="feature-box">
+                <span>🎛️ Unified Control Panel</span><br>
+                Clean, modern interface for managing scans, logs, and security settings.
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="download">
+        <h2>Download OVIRA</h2>
+        <div class="download-box">
+            <p>Download the latest OVIRA Antivirus build as a ZIP package.</p>
+
+            <a class="download-btn"
+               href="https://www.mediafire.com/file/7zauih3ueyi500x/OVIRA+Antivirus+Installation+Pack.zip/file"
+               target="_blank">
+               Download Version 0.2
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 OVIRA Antivirus — All Rights Reserved
+    </footer>
+
+</div>
+
+</body>
+</html>
